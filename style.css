@@ -1,0 +1,93 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+.attribution {
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif !important;
+  overflow: hidden;
+}
+
+span {
+  display: inline !important;
+}
+
+.bg-image {
+  position: absolute;
+}
+.bg-image.bg-image--top {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.bg-image.bg-image--bottom {
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+main {
+  overflow: hidden;
+  min-height: 100vh;
+  background: var(--dark-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .bold {
+  font-weight: bold;
+}
+main .light {
+  color: var(--dark-gray);
+}
+main .card {
+  text-align: center;
+  background: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+main .card .bio {
+  margin-bottom: 2rem;
+}
+main .card .images {
+  position: relative;
+  margin-bottom: 5rem;
+}
+main .card .avatar {
+  max-width: 100%;
+  border: 5px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .card .info {
+  border-top: 1px solid #aaaaaa77;
+  padding: 1.25rem 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=style.css.map */
